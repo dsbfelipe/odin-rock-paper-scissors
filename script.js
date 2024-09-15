@@ -36,7 +36,8 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
-function playGame() {
+/* 
+  function playGame() {
   let round = 1;
   while (round <= 5) {
     const humanChoice = getHumanChoice();
@@ -52,3 +53,4 @@ function playGame() {
     console.log("Draw!")
   }
 }
+*/
