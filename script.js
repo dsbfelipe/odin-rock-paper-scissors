@@ -14,18 +14,18 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
   if  (
-      (humanChoice === "rock" || computerChoice === "paper") &&
-      (humanChoice === "paper" || computerChoice === "scissors") &&
-      (humanChoice === "scissors" || computerChoice === "rock")
+      (humanChoice === "rock" && computerChoice === "paper") ||
+      (humanChoice === "paper" && computerChoice === "scissors") ||
+      (humanChoice === "scissors" && computerChoice === "rock")
       ) {
         console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
         computerScore++;
       }
 
   if  (
-      (humanChoice === "paper" || computerChoice === "rock") &&
-      (humanChoice === "scissors" || computerChoice === "paper") &&
-      (humanChoice === "rock" || computerChoice === "scissors")
+      (humanChoice === "paper" && computerChoice === "rock") ||
+      (humanChoice === "scissors" && computerChoice === "paper") ||
+      (humanChoice === "rock" && computerChoice === "scissors")
       ) {
         console.log(`You win! ${humanChoice} beats ${computerChoice}`)
         humanScore++;
