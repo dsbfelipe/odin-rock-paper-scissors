@@ -36,3 +36,19 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+function playGame() {
+  let round = 1;
+  while (round <= 5) {
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+    round++;
+  }
+  if (humanScore > computerScore) {
+    console.log("You win!");
+  } else if (humanScore < computerScore) {
+    console.log("You lose!");
+  } else {
+    console.log("Draw!")
+  }
+}
