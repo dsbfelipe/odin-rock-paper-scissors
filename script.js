@@ -1,6 +1,9 @@
+const rulesContainer = document.querySelector(".rules");
+const playButton = document.querySelector(".play-button");
 const options = ["rock", "paper", "scissors"];
 let humanScore = 0;
 let computerScore = 0;
+
 
 function getComputerChoice() {
   const randomIndex = Math.floor(Math.random() * 3);
