@@ -6,10 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
   <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
+  <header>
+    <img class="logo" src="/assets/logo.png" alt="">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <main class="container">
+    <section class="rules">
+      <h2>Rules</h2>
+      <h3>Hand signals</h3>
+      <p>There are three hand signals for rock, paper, and scissors:</p>
+      <p>Rock: A closed fist</p>
+      <p>Paper: A flat hand with the fingers and thumb extended, and the palm facing down</p>
+      <p>Scissors: A fist with the index and middle fingers fully extended towards the opponent</p>
+      <h3>Winning</h3>
+      <p>Rock beats scissors, paper beats rock, and scissors beats paper. If both players show the same hand signal,
+        it's a
+        tie.</p>
+    </section>
+    <button class="play-button">PLAY GAME!</button>
+    <div class="game-interface">
+      <div class="scores-container">
+        <div class="player-score-container">
+          <p class="player-label">Player</p>
+          <div class="player-score">0</div>
+        </div>
+        <div class="computer-score-container">
+          <p class="computer-label">Computer</p>
+          <div class="computer-score">0</div>
+        </div>
+      </div>
+      <div id="result" class="result">
+        You win! Paper beats Rock
+      </div>
+      <div class="options-button">
+        <h1 class="buttons-label">Select an option</h1>
+        <div>
+          <button class="paper-button choice-button"><img src="/assets/paper.png" alt=""></button>
+          <button class="scissors-button choice-button"><img src="/assets/scissors.png" alt=""></button>
+        </div>
+        <button class="rock-button choice-button"><img src="/assets/rock.png" alt=""></button>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>

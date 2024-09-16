@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffea00;
+}
+
+.logo {
+  width: 25%;
+  margin-top: 8px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  margin-top: 16px;
+}
+
+header > h1 {
+  background: linear-gradient(0deg, #bdbec2, white 30%);
+  padding: 4px 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px black;
+}
+
+.container {
+  width: 100%;
+  padding: 24px;
+  transform: translateY(5%);
+  top: -50%;
+}
+
+.rules {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 24px;
+  border-radius: 16px;
+}
+
+.rules > h2 {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.rules > h3 {
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.rules > p {
+  margin-bottom: 8px;
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rules > h3:last-of-type {
+  margin-top: 24px;
+}
+
+.play-button {
+  width: 100%;
+  height: 56px;
+  margin-top: 32px;
+  border: 4px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px black;
+  background: linear-gradient(0deg, #bdbec2, white 30%);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  margin-top: 24px;
+}
+
+.player-score-container, .computer-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 106px;
+}
+
+.player-label, .computer-label {
+  font-size: 28px;
+}
+
+.player-score, .computer-score {
+  font-size: 64px;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.result {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-size: 24px;
+  padding: 12px 24px;
+  border: 4px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px black;
+  background: linear-gradient(0deg, #bdbec2, white 30%);
+  margin-top: 24px;
+  transform: translateX(150%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.buttons-label {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+button > img {
+  width: 128px;
+}
+
+.options-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.choice-button {
+  border: none;
+  height: 128px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pressed {
+  transform: scale(1.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rock-button {
+  margin-top: 32px;
+}
+
+.options-button > div {
+  margin-top: 48px;
+  display: flex;
+  gap: 64px;
+}
+
+.game-interface {
+  overflow: hidden;
+  display: none;
+}
