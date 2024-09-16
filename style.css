@@ -125,8 +125,8 @@ header > h1 {
   box-shadow: 0px 2px 1px black;
   background: linear-gradient(0deg, #bdbec2, white 30%);
   margin-top: 24px;
-  transform: translateX(-150%);
-  transition: 0.5 ease-in-out;
+  transform: translateX(150%);
+  transition: transform 0.2s ease-in-out;
 }
 
 .buttons-label {
@@ -153,11 +153,12 @@ button > img {
 .choice-button {
   border: none;
   height: 128px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.choice-button:hover {
+.pressed {
   transform: scale(1.4);
-  transition: 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .rock-button {

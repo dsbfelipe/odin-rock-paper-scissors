@@ -6,21 +6,42 @@ const options = ["rock", "paper", "scissors"];
 const rockButton = document.querySelector(".rock-button");
 const paperButton = document.querySelector(".paper-button");
 const scissorsButton = document.querySelector(".scissors-button");
+const result = document.querySelector(".result");
+const choiceButtons = document.querySelectorAll(".choice-button");
 let humanScore = 0;
 let computerScore = 0;
 
 playButton.addEventListener("click", playGame)
 
+choiceButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    document.querySelectorAll(".pressed").forEach((button) => {
+      button.classList.remove("pressed");
+    });
+    event.target.classList.add("pressed");
+    disableButtons();
+  })
+})
+
+function disableButtons() {
+  choiceButtons.forEach((button) => {
+    button.disabled = "true";
+  })
+}
+
 rockButton.addEventListener("click", () => {
-  playRound("rock", getComputerChoice());
+  const playerChoice = "rock";
+  playRound(playerChoice, getComputerChoice());
 })
 
 paperButton.addEventListener("click", () => {
-  playRound("paper", getComputerChoice());
+  const playerChoice = "paper";
+  playRound(playerChoice, getComputerChoice());
 })
 
 scissorsButton.addEventListener("click", () => {
-  playRound("scissors", getComputerChoice());
+  const playerChoice = "scissors";
+  playRound(playerChoice, getComputerChoice());
 })
 
 function getComputerChoice() {
@@ -39,7 +60,7 @@ function playRound(humanChoice, computerChoice) {
       (humanChoice === "paper" && computerChoice === "scissors") ||
       (humanChoice === "scissors" && computerChoice === "rock")
       ) {
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+        result.textContent = `You lose! ${computerChoice} beats ${humanChoice}`;
         computerScore++;
       }
 
@@ -48,15 +69,19 @@ function playRound(humanChoice, computerChoice) {
       (humanChoice === "scissors" && computerChoice === "paper") ||
       (humanChoice === "rock" && computerChoice === "scissors")
       ) {
-        console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+        result.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
         humanScore++;
       }
 
   if (humanChoice === computerChoice) {
-    console.log(`There's a draw! you both chose ${humanChoice}`)
+    result.textContent = `Tie! you both chose ${humanChoice}`;
   }
+  result.style.transform = "translateX(0%)"
 }
 
+function setScore() {
+
+}
 
 function playGame() {
   rulesContainer.style.display = "none";
