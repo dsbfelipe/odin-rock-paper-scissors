@@ -1,8 +1,13 @@
+const mainContainer = document.querySelector(".container");
 const rulesContainer = document.querySelector(".rules");
 const playButton = document.querySelector(".play-button");
+const gameInterface = document.querySelector(".game-interface");
 const options = ["rock", "paper", "scissors"];
 let humanScore = 0;
 let computerScore = 0;
+
+playButton.addEventListener("click", playGame)
+
 
 
 function getComputerChoice() {
@@ -37,6 +42,18 @@ function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
     console.log(`There's a draw! you both chose ${humanChoice}`)
   }
+}
+
+function createElement(tag, className, parent) {
+  const element = document.createElement(tag);
+  element.className = className;
+  parent.appendChild(element);
+  return element;
+}
+
+function playGame() {
+  rulesContainer.remove();
+  playButton.remove();
 }
 
 /* 

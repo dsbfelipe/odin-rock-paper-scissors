@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Silkscreen:wght@400;700&display=swap"
     rel="stylesheet">
 </head>
 
@@ -33,6 +33,29 @@
         tie.</p>
     </section>
     <button class="play-button">PLAY GAME!</button>
+    <div class="game-interface">
+      <div class="scores-container">
+        <div class="player-score-container">
+          <p class="player-label">Player</p>
+          <div class="player-score">0</div>
+        </div>
+        <div class="computer-score-container">
+          <p class="computer-label">Computer</p>
+          <div class="computer-score">0</div>
+        </div>
+      </div>
+      <div id="result" class="result">
+        You win! Paper beats Rock
+      </div>
+      <div class="options-button">
+        <h1 class="buttons-label">Select an option</h1>
+        <div>
+          <button class="paper-button choice-button"><img src="/assets/paper.png" alt=""></button>
+          <button class="scissors-button choice-button"><img src="/assets/scissors.png" alt=""></button>
+        </div>
+        <button class="rock-button choice-button"><img src="/assets/rock.png" alt=""></button>
+      </div>
+    </div>
   </main>
 </body>
 

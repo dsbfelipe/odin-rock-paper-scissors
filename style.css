@@ -87,3 +87,90 @@ header > h1 {
   font-style: normal;
   cursor: pointer;
 }
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  margin-top: 24px;
+}
+
+.player-score-container, .computer-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 106px;
+}
+
+.player-label, .computer-label {
+  font-size: 28px;
+}
+
+.player-score, .computer-score {
+  font-size: 64px;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.result {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-size: 24px;
+  padding: 12px 24px;
+  border: 4px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px black;
+  background: linear-gradient(0deg, #bdbec2, white 30%);
+  margin-top: 24px;
+  transform: translateX(-150%);
+  transition: 0.5 ease-in-out;
+}
+
+.buttons-label {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+button > img {
+  width: 128px;
+}
+
+.options-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.choice-button {
+  border: none;
+  height: 128px;
+}
+
+.choice-button:hover {
+  transform: scale(1.4);
+  transition: 0.2s ease-in-out;
+}
+
+.rock-button {
+  margin-top: 32px;
+}
+
+.options-button > div {
+  margin-top: 48px;
+  display: flex;
+  gap: 64px;
+}
+
+.game-interface {
+  overflow: hidden;
+  display: none;
+}
