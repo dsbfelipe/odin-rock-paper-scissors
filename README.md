@@ -1,4 +1,4 @@
-# <img src="misc/odin-project.png">
+# <img src="https://raw.githubusercontent.com/dsbfelipe/readme-banners/main/images/odin-project.png">
 
 <img align="right" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"><img align="right" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img align="right" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 
@@ -13,11 +13,11 @@ This project is a Rock Paper Scissors game built with JavaScript, where players 
 </summary> <br />
     
 <p align="center">
-    <img width="32%" src="misc/screenshot-1.png" alt="own-your-code"/>
+    <img width="32%" src="screenshots/screenshot-1.png" alt="own-your-code"/>
 &nbsp;
-    <img width="32%" src="misc/screenshot-2.png" alt="customize-code"/>
+    <img width="32%" src="screenshots/screenshot-2.png" alt="customize-code"/>
 &nbsp;
-    <img width="32%" src="misc/screenshot-3.png" alt="customize-code"/>
+    <img width="32%" src="screenshots/screenshot-3.png" alt="customize-code"/>
 </p>
 
 </details>
