@@ -8,6 +8,8 @@ const paperButton = document.querySelector(".paper-button");
 const scissorsButton = document.querySelector(".scissors-button");
 const result = document.querySelector(".result");
 const choiceButtons = document.querySelectorAll(".choice-button");
+const playerScoreDisplay = document.querySelector(".player-score");
+const computerScoreDisplay = document.querySelector(".computer-score");
 let humanScore = 0;
 let computerScore = 0;
 
@@ -19,15 +21,8 @@ choiceButtons.forEach((button) => {
       button.classList.remove("pressed");
     });
     event.target.classList.add("pressed");
-    disableButtons();
   })
 })
-
-function disableButtons() {
-  choiceButtons.forEach((button) => {
-    button.disabled = "true";
-  })
-}
 
 rockButton.addEventListener("click", () => {
   const playerChoice = "rock";
