@@ -22,11 +22,11 @@ This project is a Rock Paper Scissors game built with JavaScript, where players 
 
 </details>
 
-## Project Objective
+## 📝 Project Objective
 
 The focus of this project was on delivering a working game quickly, without spending unnecessary time on perfecting the design or adding extra features. While it's easy to get carried away with enhancing the user experience, visual design, or interactivity, the intention here was to complete the core functionality and move forward, reserving any deeper refinements for future, more polished projects.
 
-## Features
+## 🔧 Features
 
 - **Interactive GUI**: Players can choose "Rock," "Paper," or "Scissors" using buttons, and the game immediately displays the results on the webpage.
 
@@ -36,7 +36,7 @@ The focus of this project was on delivering a working game quickly, without spen
 
 - **Git Branching**: The project showcases the use of Git branching for feature development, including the creation, merging, and cleanup of branches.
 
-## How to Play
+## 🕹️ How to Play
 
 1. Select "Rock," "Paper," or "Scissors" by clicking the respective button.
 
@@ -46,7 +46,7 @@ The focus of this project was on delivering a working game quickly, without spen
 
 4. The first player to reach 5 points wins the game.
 
-## Installation
+## 💾 Installation
 
 1. Clone this repository:
 
@@ -55,7 +55,7 @@ The focus of this project was on delivering a working game quickly, without spen
     ````
 2. Navigate to the project folder and open the index.html file in your browser.
 
-## Technologies Used
+## 💻 Technologies Used
 
 - **HTML5** for structure
 
@@ -65,7 +65,7 @@ The focus of this project was on delivering a working game quickly, without spen
 
 - **Git & GitHub** for version control and collaboration
 
-## Acknowledgements
+## 💡 Acknowledgements 
 
 - **The Odin Project**: Thank you for providing the guidance and foundation for this project.
 
