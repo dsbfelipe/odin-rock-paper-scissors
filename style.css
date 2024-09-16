@@ -92,7 +92,7 @@ header > h1 {
   display: flex;
   justify-content: center;
   gap: 96px;
-  margin-top: 0px;
+  margin-top: 24px;
 }
 
 .player-score-container, .computer-score-container {
