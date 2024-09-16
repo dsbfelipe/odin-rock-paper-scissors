@@ -51,7 +51,7 @@ The focus of this project was on delivering a working game quickly, without spen
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/rock-paper-scissors.git
+    git clone https://github.com/dsbfelipe/odin-rock-paper-scissors.git
     ````
 2. Navigate to the project folder and open the index.html file in your browser.
 
@@ -64,3 +64,11 @@ The focus of this project was on delivering a working game quickly, without spen
 - **JavaScript (ES6+)** for game logic and interactivity
 
 - **Git & GitHub** for version control and collaboration
+
+## Acknowledgements
+
+- **The Odin Project**: Thank you for providing the guidance and foundation for this project.
+
+- **Sacha Jerrems on Dribbble**: I used his Rock Paper Scissors design for the buttons in my project. You can view the design here: <a href="https://dribbble.com/shots/2193123-Rock-Paper-Scissors">Sacha Jerrems' design</a>.
+
+- **Kiel Johnson on Dribbble**: I used his Roshambo Hands design to improvise a logo for the page. You can view the design here: <a href="https://dribbble.com/shots/2645906-Roshambo-Hands">Kiel Johnson's design</a>.
