@@ -24,6 +24,11 @@ choiceButtons.forEach((button) => {
   })
 })
 
+function setScore() {
+  playerScoreDisplay.textContent = humanScore;
+  computerScoreDisplay.textContent = computerScore;
+}
+
 rockButton.addEventListener("click", () => {
   const playerChoice = "rock";
   playRound(playerChoice, getComputerChoice());
@@ -57,6 +62,7 @@ function playRound(humanChoice, computerChoice) {
       ) {
         result.textContent = `You lose! ${computerChoice} beats ${humanChoice}`;
         computerScore++;
+        setScore();
       }
 
   if  (
@@ -66,16 +72,26 @@ function playRound(humanChoice, computerChoice) {
       ) {
         result.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
         humanScore++;
+        setScore();
       }
 
   if (humanChoice === computerChoice) {
     result.textContent = `Tie! you both chose ${humanChoice}`;
   }
-  result.style.transform = "translateX(0%)"
-}
-
-function setScore() {
-
+  result.style.transition = "transform 0.2s ease-in-out";
+  setTimeout(() => {
+    result.style.transform = "translateX(0%)"
+  }
+  )
+  setTimeout(() => {
+    result.style.transform = "translateX(-150%)";
+  }, 2000
+  )
+  setTimeout(() => {
+    result.style.transition = "none";
+    result.style.transform = "translateX(150%)"
+  }, 2500
+  )
 }
 
 function playGame() {
