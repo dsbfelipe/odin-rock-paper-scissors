@@ -78,6 +78,7 @@ function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
     result.textContent = `Tie! you both chose ${humanChoice}`;
   }
+  setWinner();
   result.style.transition = "transform 0.2s ease-in-out";
   setTimeout(() => {
     result.style.transform = "translateX(0%)"
@@ -100,23 +101,21 @@ function playGame() {
   gameInterface.style.display = "block";
 }
 
-
-
-/* 
-  function playGame() {
-  let round = 1;
-  while (round <= 5) {
-    const humanChoice = getHumanChoice();
-    const computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
-    round++;
-  }
-  if (humanScore > computerScore) {
-    console.log("You win!");
-  } else if (humanScore < computerScore) {
-    console.log("You lose!");
+function setWinner() {
+  if (computerScore === 5) {
+    result.textContent = "Game Over! You Lose!";
+    resetScore();
+  } else if (humanScore === 5) {
+    result.textContent = "Game Over! You win!";
+    resetScore();
   } else {
-    console.log("Draw!")
+    return;
   }
 }
-*/
+
+function resetScore() {
+  humanScore = 0;
+  computerScore = 0;
+  playerScoreDisplay.textContent = "0";
+  computerScoreDisplay.textContent = "0";
+}
