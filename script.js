@@ -3,12 +3,25 @@ const rulesContainer = document.querySelector(".rules");
 const playButton = document.querySelector(".play-button");
 const gameInterface = document.querySelector(".game-interface");
 const options = ["rock", "paper", "scissors"];
+const rockButton = document.querySelector(".rock-button");
+const paperButton = document.querySelector(".paper-button");
+const scissorsButton = document.querySelector(".scissors-button");
 let humanScore = 0;
 let computerScore = 0;
 
 playButton.addEventListener("click", playGame)
 
+rockButton.addEventListener("click", () => {
+  playRound("rock", getComputerChoice());
+})
 
+paperButton.addEventListener("click", () => {
+  playRound("paper", getComputerChoice());
+})
+
+scissorsButton.addEventListener("click", () => {
+  playRound("scissors", getComputerChoice());
+})
 
 function getComputerChoice() {
   const randomIndex = Math.floor(Math.random() * 3);
@@ -44,17 +57,14 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
-function createElement(tag, className, parent) {
-  const element = document.createElement(tag);
-  element.className = className;
-  parent.appendChild(element);
-  return element;
-}
 
 function playGame() {
-  rulesContainer.remove();
-  playButton.remove();
+  rulesContainer.style.display = "none";
+  playButton.style.display = "none";
+  gameInterface.style.display = "block";
 }
+
+
 
 /* 
   function playGame() {
